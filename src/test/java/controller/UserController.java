@@ -32,6 +32,5 @@ public class UserController {
                 .header("Authorization","bearer "+ prop.getProperty("token"))
                 .when().get("/user/search/id/"+userId);
         return res;
-
     }
 }
